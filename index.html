@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <div class="background">
+      <img src="./images/bg-mobile-dark.jpg" alt="Todo app background" />
+    </div>
+
+    <main class="container">
+      <div class="header">
+        <h1 class="logo">Todo</h1>
+        <button class="theme-btn" title="Change Theme">
+          <img src="./images/icon-sun.svg" alt="Sun icon" />
+        </button>
+      </div>
+
+      <form class="add-todo todo-wrapper">
+        <div class="checkbox-wrapper">
+          <input
+            class="checkbox"
+            type="checkbox"
+            aria-label="Add todo"
+            id="add-todo"
+          />
+          <span></span>
+          <label for="add-todo" class="checkmark"></label>
+        </div>
+        <input
+          class="add-todo__input"
+          type="text"
+          aria-label="New todo"
+          placeholder="Create a new todo..."
+        />
+      </form>
+
+      <div class="todo-list-wrapper">
+        <ul class="todo-list">
+          <li data-id="1" class="todo-wrapper" draggable="true">
+            <div class="checkbox-wrapper">
+              <input
+                class="checkbox"
+                type="checkbox"
+                aria-label="Add todo"
+                id="first"
+              />
+              <span></span>
+              <label for="first" class="checkmark"></label>
+            </div>
+            <p>Welcome, this is a todo app</p>
+            <button class="delete" title="delete todo">
+              <img src="./images/icon-cross.svg" alt="Icon cancel" />
+            </button>
+          </li>
+        </ul>
+
+        <div class="list-footer todo-wrapper">
+          <p class="counter">0 Items left</p>
+          <div class="filters filters-desktop" style="display: none;">
+            <button data-filter="all" title="See all todo" class="active">All</button>
+            <button data-filter="active" title="See active todo">Active</button>
+            <button data-filter="completed" title="See completed todo">Completed</button>
+          </div>
+          <button class="clear-complete" title="Clear completed todo">Clear completed</button>
+        </div>
+      </div>
+
+      <div class="filters filters-mobile todo-wrapper">
+        <button data-filter="all" title="See all todo" class="active">All</button>
+        <button data-filter="active" title="See active todo">Active</button>
+        <button data-filter="completed" title="See completed todo">Completed</button>
+      </div>
+
+      <footer class="footer">Drag and drop to reorder list</footer>
+    </main>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.cosimocollini.it">Cosimo Collini</a>.
+  </div> -->
+  </body>
+</html>

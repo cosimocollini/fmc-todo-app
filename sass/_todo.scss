@@ -1,0 +1,36 @@
+.todo-wrapper {
+    display: block;
+    height: 50px;
+    background-color: var(--input-bg);
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    //cursor: move;
+    transition: background-color 0.35s ease;
+
+    input, p {
+        width: 100%;
+        color: var(--text-color);
+        font-size: 12px;
+    }
+
+    .delete {
+        cursor: pointer;
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 12px;
+            height: auto;
+        }
+    }
+
+    &.done {
+        p {
+            text-decoration: line-through;
+            color: var(--grayish-text);
+        }
+    }
+}

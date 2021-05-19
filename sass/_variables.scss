@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+
+$colors: (
+  "main": #3a7bfd,
+  "gradient": linear-gradient #57ddff to #c058f3,
+  "LightGray": #fafafa,
+  "VeryLightGrayishBlue": #e4e5f1,
+  'LightGrayishBlue': #d2d3db,
+  'DarkGrayishBlue': #9394a5,
+  'VeryDarkGrayishBlue': #484b6a,
+  'VeryDarkBlue': #161722,
+  'VeryDarkDesaturatedBlue': #25273c,
+//   'LightGrayishBlue': #cacde8,
+//   'LightGrayisBluehover': #e4e5f1,
+//   'DarkGrayishBlue': #777a92,
+//   'VeryDarkGrayishBlue': #4d5066,
+//   'VeryDarkGrayishBlue': #393a4c,
+);
+
+$VeryDarkBlue: #161722;
+$spacing-grid: 8px;
+
+html[data-theme="light"] {
+  --bg: #fafafa;
+  --text-color: #25273c;
+  --input-bg: #fff;
+  --todo-border: #cacde8;
+  --image-bg: url('/images/bg-mobile-light.jpg');
+  --image-bg-desk: url('/images/bg-desktop-light.jpg');
+  --box-shadow: rgba(228, 229, 241, 0.6);
+  --hover-text: #484b6a;
+  --grayish-text: #e4e5f1;
+}
+
+html[data-theme="dark"] {
+  --bg: #161722;
+  --text-color: #fafafa;
+  --input-bg: #25273c;
+  --todo-border: #484b6a;
+  --image-bg: url('/images/bg-mobile-dark.jpg');
+  --image-bg-desk: url('/images/bg-desktop-dark.jpg');
+  --box-shadow: rgb(22, 23, 34);
+  --hover-text: #e4e5f1;
+  --grayish-text: #484b6a;
+}
+

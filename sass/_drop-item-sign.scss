@@ -1,0 +1,8 @@
+.drop-item-sign {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: map-get($colors, main);
+}
