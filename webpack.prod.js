@@ -10,15 +10,15 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = merge(common, {
   mode: "production",
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/',
-    filename: 'js/[name].[contenthash].bundle.js',
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "/fmc-todo-app/",
+    filename: "js/[name].[contenthash].bundle.js",
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles/[name].[contenthash].css',
-      chunkFilename: "[id].css"
-    })
+      filename: "styles/[name].[contenthash].css",
+      chunkFilename: "[id].css",
+    }),
   ],
   module: {
     rules: [
@@ -28,10 +28,10 @@ module.exports = merge(common, {
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
-          "sass-loader"
-        ]
-      }
-    ]
+          "sass-loader",
+        ],
+      },
+    ],
   },
   optimization: {
     minimize: true,
@@ -44,7 +44,7 @@ module.exports = merge(common, {
           },
         },
         extractComments: false,
-      })
-    ]
-  }
+      }),
+    ],
+  },
 });
