@@ -14,6 +14,11 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
 
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
       - name: Clean install dependencies
         run: npm ci
 
