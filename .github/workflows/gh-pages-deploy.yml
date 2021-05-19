@@ -20,5 +20,5 @@ jobs:
 
       - name: Run deploy script
         run: |
-          git config user.name "Your username" && git config user.email "your email"
+          git config user.name cosimocollini && git config user.email cosicollini@gmail.com
           npm run gh-pages-deploy
