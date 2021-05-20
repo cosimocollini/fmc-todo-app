@@ -34,21 +34,12 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpeg|jpg|png|svg)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: "/images/[name].[ext]",
-          },
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
       {
-        test: /\.woff(2)?(\?[a-z0-9]+)?$/,
-        loader: "url-loader?limit=10000&mimetype=application/font-woff",
-      },
-      {
-        test: /\.(ttf|eot)(\?[a-z0-9]+)?$/,
-        loader: "file-loader",
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
