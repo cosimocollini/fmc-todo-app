@@ -17,6 +17,15 @@ module.exports = {
       favicon: path.resolve(__dirname, "./images/favicon-32x32.png"),
       template: path.resolve(__dirname, "./index.html"),
       filename: "index.html",
+      minify: {
+        collapseWhitespace: true,
+        keepClosingSlash: true,
+        removeComments: true,
+        removeRedundantAttributes: false,// do not remove type="text"
+        removeScriptTypeAttributes: true,
+        removeStyleLinkTypeAttributes: true,
+        useShortDoctype: true,
+      },
     }),
   ],
   module: {
